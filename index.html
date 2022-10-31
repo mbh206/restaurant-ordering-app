@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header" class="header">
+            <h1>Jimmy’s Diner</h1>
+            <h3>The best burgers and pizzas in town.</h3>
+        </header>
+        <body class="menu">
+            <div id="menu-section" >
+            </div>
+            <div id="cart" class="cart">
+                <h1 class="cart-title">Your order</h1>
+                <div class="cart-order">
+                    <div id="cart-order-items" class="cart-order-items">
+                    </div>
+                    <hr class="btm-divider">
+                    <div class="cart-total">
+                        <h1 class="cart-total-name">Total price:</h1>
+                        <h3 id="cart-total-price" class="cart-total-price">$0</h3>
+                    </div>
+                </div>
+                <div class="complete-order-btn btn" data-complete="done">Complete Order</div>
+            </div>
+            <div id="modal-div" class="modal">
+                <div class="modal">
+                    <div class="close-modal-btn" data-closebtn="X">X</div>
+                    <h1 class="modal-title">Enter card details</h1>
+                    <form class="modal-form">
+                        <input type="text" placeholder="Enter your name">
+                        <input type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="Enter card number">
+                        <input type="number" placeholder="Enter CVV">
+                        <div class="pay-btn btn" data-pay="paid">Pay</div>
+                    </form>
+                </div>
+            </div>
+        </body>
+	<script src="script.js" type="module"></script>
+    </body>
+</html>
+

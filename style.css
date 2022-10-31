@@ -1,0 +1,236 @@
+html, body {
+    font-size: 14px;
+    font-family: 'Smythe', cursive;
+    margin: 0;
+} 
+
+body {
+    width:100%;
+    min-width: 350px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 10em;
+    padding: .8em 4em;
+    background-image:url('/images/ferks-guare-KEZdWfYD-ow-unsplash\ 1.png');
+    background-size: cover;
+    background-repeat: none;
+    background-position: 0;
+}
+
+header h1, header h3 {
+    color:#fff;
+    margin-top:.5em;
+}
+
+h1 {
+    font-weight: bolder;
+    margin:0;
+}
+
+h3 {
+    font-weight: lighter;
+    margin:0;
+}
+
+.divider {
+    height: .05em;
+    background-color: #8b8b8b;
+    margin: 0 3em;
+    border:none;
+}
+
+.menu {
+    width: 100%;
+    margin:0 auto;
+    padding: 0em;
+}
+
+.item-container {
+    display: flex;
+    padding: .5em 1em;
+}
+
+.item-info {
+    margin: 2em 0;
+}
+
+.item-img {
+    font-size: 5.5em;
+    margin-top:.1em;
+    padding:.3em;
+    opacity: .72;
+}
+
+.item-name {
+    font-weight: lighter;
+}
+
+.item-ingredients {
+    color:#8b8b8b;
+    font-weight: lighter;
+    margin-bottom: 1em;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right:50px;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+button {
+    /* height:1em;
+    width:1em; */
+    font-size: 1em;
+    font-weight: lighter;
+    color: #3c3c3c;
+    background-color: #fff;
+    margin: 1em 0;
+    padding: 0 .5em .12em .52em;
+    border:.5px solid #DEDEDE;
+    border-radius: 50%;
+}
+
+button:hover {
+    background-color: #d7d7d7;
+}
+
+button:active {
+    background-color: #8b8b8b;
+}
+
+.cart-order-items {
+    display: block;
+} 
+
+.cart-item-container,
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3em;
+}
+
+.cart-item-info,
+.cart-item-totals {
+    display: flex;
+    align-items: baseline;
+}
+
+.cart-item-name,
+.cart-item-count {
+    padding:0 .5em 0 0;
+}
+
+.cart-item-remove {
+    cursor: pointer;
+    color: #8b8b8b;
+}
+
+.cart {
+    display: none;
+    padding:3em 0;
+    text-align: center;
+}
+
+.cart-title {
+    padding-bottom: 1.5em;
+}
+
+.btm-divider {
+    height: .1em;
+    background-color: #000;
+    margin: 1em 3em;
+    border:none;
+}
+
+.btn {
+    cursor: pointer;
+    color:#fff;
+    background-color: #16DB99;
+    font-size: .9em;
+    font-weight: bold;
+    font-family:arial, sans-serif;
+    margin:0 auto;
+    padding:1em 0;
+    margin: 1em 3em;
+}
+
+.complete-order-btn:active {
+    background-color: #0ea170;
+}
+
+#modal-div {
+    display: none;
+}
+
+.modal {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    box-shadow: 1px 1px 150px rgba(0, 0, 0, 0.465);
+    display: block;
+    height: 80%;
+    max-height: 400px;
+    width: 80%;
+    max-width: 400px;
+    margin:auto;
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color: #fff;
+}
+
+.close-modal-btn {
+    cursor: pointer;
+    text-align: right;
+    margin: .5em .5em 0 0;
+    font-size: 1.5em;
+    color: #16DB99;
+}
+
+.modal-title {
+    text-align: center;
+    padding: 1em;
+}
+
+form {
+    color:#757575;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 400px;
+    margin:0 auto;
+}
+
+input {
+    width: 100%;
+    font-size: 1em;
+    padding: 1em 1em;
+    margin: .5em 0;
+}
+
+.pay-btn {
+    width: 100%;
+}
+
+.order-complete {
+    display: flex;
+    justify-content: center;
+    color: #008458;
+    font-size: 1.5em;
+    font-weight: lighter;
+    background-color: #ECFDF5;
+    width: 85%;
+    padding: 1em 0em;
+    margin:0 auto;
+}
