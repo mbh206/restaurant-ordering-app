@@ -5,8 +5,10 @@ html, body {
 } 
 
 body {
+    margin:0 auto;
     width:100%;
-    min-width: 350px;
+    max-width: 650px;
+    min-width: 300px;
 }
 
 .header {
@@ -45,13 +47,21 @@ h3 {
 
 .menu {
     width: 100%;
+    max-width: 650px;
     margin:0 auto;
     padding: 0em;
 }
 
 .item-container {
     display: flex;
+    justify-content: space-between;
+    width:100%;
+    max-width: 650px;
     padding: .5em 1em;
+}
+
+.item-container-left {
+    display: flex;
 }
 
 .item-info {
@@ -79,15 +89,13 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
+    position: relative;
     right:50px;
     margin-top: 20px;
     font-size: 2em;
 }
 
 button {
-    /* height:1em;
-    width:1em; */
     font-size: 1em;
     font-weight: lighter;
     color: #3c3c3c;
